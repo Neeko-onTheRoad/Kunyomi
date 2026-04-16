@@ -1,0 +1,33 @@
+name: kunyomi
+description: "訓読みを練習しなくちゃ死ぬことになるべきだ"
+publish_to: 'none'
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  shared_preferences:
+  http:
+  fluttertoast:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: SourceHan
+      fonts:
+      - asset: 'assets/fonts/SourceHanSansJP-Light.otf'
+      - asset: 'assets/fonts/SourceHanSansJP-Bold.otf'
+        weight: 700
