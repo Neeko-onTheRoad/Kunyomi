@@ -8,9 +8,22 @@ class Kunyomi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: const KunyomiBody(),
-      bottomNavigationBar: const BottomAppBar(),
+      backgroundColor: Theme.of(context).colorScheme.surfaceBright,
+      appBar: buildAppBar(context),
+      body: const KunyomiBody()
+    );
+  }
+
+  AppBar buildAppBar(BuildContext context) {
+    return AppBar(
+      backgroundColor: Theme.of(context).colorScheme.surface,
+      title: Text("これは日本語のフォントの試しです", style: TextStyle(fontWeight: FontWeight.bold)),
+      leading: IconButton(
+        icon: Icon(Icons.menu),
+        onPressed: () {
+          print("fuck");
+        }
+      ),
     );
   }
 

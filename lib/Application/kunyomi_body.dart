@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class KunyomiBody extends StatelessWidget {
 
@@ -6,8 +6,64 @@ class KunyomiBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Placeholder();
-
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        Flexible(
+          flex: 3,
+          child: Text(
+            '別れる',
+            style: TextStyle(
+              fontSize: 70,
+              fontWeight: FontWeight.bold
+            ),
+          )
+        ),
+        Flexible(
+          flex: 1,
+          child: Container(
+            padding: EdgeInsets.all(1),
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        child: Text('知ってる'),
+                      )
+                    ),
+                    Expanded(
+                        child: ElevatedButton(
+                          child: Text('分かんな'),
+                          onPressed: () {},
+                        )
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    Expanded(
+                        child: ElevatedButton(
+                          child: Text('a'),
+                          onPressed: () {},
+                        )
+                    ),
+                    Expanded(
+                        child: ElevatedButton(
+                          child: Text('a'),
+                          onPressed: () {},
+                        )
+                    ),
+                  ],
+                )
+              ],
+            )
+          )
+        ),
+      ],
+    );
   }
 
 }
