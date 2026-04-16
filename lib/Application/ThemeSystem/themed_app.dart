@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kunyomi/Application/ThemeSystem/theme_info.dart';
 import 'package:kunyomi/Application/ThemeSystem/theme_holder.dart';
-import 'package:kunyomi/DataManagement/InternalData/ApplicationPrefs.dart';
+import 'package:kunyomi/DataManagement/InternalData/application_prefs.dart';
 
 class ThemedApp extends StatefulWidget {
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kunyomi/Application/kunyomi.dart';
 import 'package:kunyomi/Application/ThemeSystem/themed_app.dart';
 
 void main() {
@@ -11,8 +12,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ThemedApp(
-      child: MaterialApp(),
+    return const ThemedApp(
+      child: Kunyomi()
     );
   }
 }
